@@ -42,7 +42,9 @@ $result = $conn->query($sql);
                 <td><img src="<?php echo $user['profile_picture']; ?>" alt="Profile Picture" width="50"></td>
                 <td>
                     <a href="edit_user.php?id=<?php echo $user['id']; ?>" class="btn btn-warning">Edit</a>
+                    <a  class="btn btn-info btn-sm" href="profile.php">View Profile</a>
                     <a href="delete_user.php?id=<?php echo $user['id']; ?>" class="btn btn-danger">Delete</a>
+
                     <button onclick="window.print()">Print User Records</button>
                 </td>
                 
